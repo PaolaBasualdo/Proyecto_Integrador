@@ -1,27 +1,20 @@
-/* General Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 html, body {
   height: 100%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  background-color: #f0f0f0; /* Gris claro */
-  color: #4a4a4a; /* Gris antracita */
-  line-height: 1.6;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; 
+  color: #4a4a4a; 
+  line-height: 1.5;
   display: grid;
-  grid-template-rows: auto 1fr auto; /* Header, contenido, footer */
-  min-height: 100vh;
+  grid-template-rows: auto 1fr auto; /* header, section, footer */
+  
 }
 
-/* Estilos del Header */
+
 .header {
-  background-color: #5BC0EB; /* Azul aguamarina */
+  background-color: #5BC0EB; 
   color: white;
   text-align: center;
   padding: 20px;
@@ -32,7 +25,6 @@ body {
   margin: 0;
 }
 
-/* Estilos del Contenido */
 .contenedor-pagina {
   display: grid;
   grid-template-columns: 1fr;
@@ -44,6 +36,8 @@ body {
   margin: 0 auto;
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  justify-items: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
 }
 
 .contenedor-pagina img {
@@ -58,52 +52,73 @@ body {
   margin-bottom: 20px;
 }
 
-/* Botón */
-.btn {
+
+.boton {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #FDE74C; /* Naranja brillante */
-  color: #4a4a4a; /* Gris oscuro para contraste */
+  background-color: #FDE74C; 
+  color: #4a4a4a; 
   text-decoration: none;
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
-.btn:hover {
-  background-color: #FC5130; /* Coral en hover */
+.boton:hover {
+  background-color: #FC5130; 
 }
 
-/* Estilos del Footer */
+
 .footer {
-  background-color: #4a4a4a; /* Gris oscuro */
+  background-color: #4a4a4a; 
   color: white;
   text-align: center;
   padding: 20px;
-  grid-row: 3; /* Asegura que esté en el fondo */
+  
+}
+@media (max-width: 599px) {
+  h1 {
+    font-size: 1.5rem; 
+    }
+ 
+  p {
+    font-size: 0.80rem;
+    
+  }
+   
+  
 }
 
-/* Responsividad */
-@media (max-width: 1024px) {
-  .contenedor-pagina {
-      padding: 20px;
+@media (min-width: 600px) and (max-width: 899px) {
+
+  h1 {
+    font-size: 1.75rem;
+    }
+
+  p {
+      font-size: 0.90rem;
+     
+    }
+ 
+  
   }
 
-  .header h1 {
-      font-size: 1.8rem;
-  }
+@media (min-width: 900px) {
+  
+  h1 {
+    font-size: 2.5rem; 
+    }
+  
+  p {
+    font-size: 1rem;
+    
+    }
+  
+  
+  
+
+  
 }
 
-@media (max-width: 768px) {
-  .contenedor-pagina {
-      padding: 15px;
-  }
 
-  .header h1 {
-      font-size: 1.5rem;
-  }
 
-  .parrafo-pagina {
-      font-size: 1rem;
-  }
-}

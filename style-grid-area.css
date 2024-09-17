@@ -1,0 +1,232 @@
+body {
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "sobre-mi"
+      "proyectos"
+      "contacto"
+      "footer";
+    grid-template-rows: auto; /* Ajusta la altura de las filas automáticamente */
+    grid-template-columns: 1fr; /* Una sola columna */
+  }
+  
+  header {
+    grid-area: header;
+  }
+  
+  #sobre-mi {
+    grid-area: sobre-mi;
+  }
+  
+  #proyectos {
+    grid-area: proyectos;
+  }
+  
+  #contacto {
+    grid-area: contacto;
+  }
+  
+  footer {
+    grid-area: footer;
+  }
+  html, body {
+    height: 100%;
+    margin: 0;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f0f0;
+    color: #4a4a4a; 
+    line-height: 1.5;
+    display: grid;
+    grid-template-areas: 
+      "header"
+      "sobre-mi"
+      "proyectos"
+      "contacto"
+      "footer";
+    grid-template-rows: auto; /* Ajusta la altura de las filas según el contenido */
+    min-height: 100vh; /* Asegura que la página ocupe al menos el 100% de la altura de la ventana */
+  }
+  
+  /* Header */
+  header {
+    grid-area: header;
+    background-color: #5BC0EB; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    font-style: italic;
+  }
+  
+  /* Sobre mí */
+  #sobre-mi {
+    grid-area: sobre-mi;
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  #sobre-mi h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  #sobre-mi p {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Proyectos */
+  #proyectos {
+    grid-area: proyectos;
+    padding: 40px 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+  }
+  
+  #proyectos h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+  
+  .proyectos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  
+  .proyecto {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .proyecto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .proyecto h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .proyecto p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+  }
+  
+  .boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #FDE74C; 
+    color: #4a4a4a; 
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .boton:hover {
+    background-color: #FC5130; 
+  }
+  
+  /* Contacto */
+  #contacto {
+    grid-area: contacto;
+    padding: 40px 20px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  #contacto a {
+    color:  #5BC0EB;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  #contacto a:hover {
+    color: #FC5130;
+  }
+  
+  /* Footer */
+  footer {
+    grid-area: footer;
+    background-color: #4a4a4a; 
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Queries para adaptarse a pantallas pequeñas */
+  @media (max-width: 599px) {
+    h1 {
+      font-size: 1.5rem; 
+    }
+    
+    h2 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.75rem;
+    }
+  
+    .proyectos-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Pantallas medianas */
+  @media (min-width: 600px) and (max-width: 899px) {
+    h1 {
+      font-size: 1.75rem;
+    }
+    
+    h2 {
+      font-size: 1rem;
+    }
+    
+    p {
+      font-size: 0.875rem;
+    }
+    
+    .proyectos-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Pantallas grandes */
+  @media (min-width: 900px) {
+    h1 {
+      font-size: 2.5rem; 
+    }
+    
+    h2 {
+      font-size: 2rem;
+    }
+    
+    p {
+      font-size: 1rem;
+    }
+    
+    .proyectos-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
