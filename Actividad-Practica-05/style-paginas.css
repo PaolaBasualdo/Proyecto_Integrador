@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f0f0f0; /* Gris claro */
+  color: #4a4a4a; /* Gris antracita */
+  line-height: 1.6;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Header, contenido, footer */
+  min-height: 100vh;
+}
+
+/* Estilos del Header */
+.header {
+  background-color: #5BC0EB; /* Azul aguamarina */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.header h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+/* Estilos del Contenido */
+.contenedor-pagina {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  background-color: white;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-pagina img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.parrafo-pagina {
+  font-size: 1.2rem;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FDE74C; /* Naranja brillante */
+  color: #4a4a4a; /* Gris oscuro para contraste */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FC5130; /* Coral en hover */
+}
+
+/* Estilos del Footer */
+.footer {
+  background-color: #4a4a4a; /* Gris oscuro */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  grid-row: 3; /* Asegura que esté en el fondo */
+}
+
+/* Responsividad */
+@media (max-width: 1024px) {
+  .contenedor-pagina {
+      padding: 20px;
+  }
+
+  .header h1 {
+      font-size: 1.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .contenedor-pagina {
+      padding: 15px;
+  }
+
+  .header h1 {
+      font-size: 1.5rem;
+  }
+
+  .parrafo-pagina {
+      font-size: 1rem;
+  }
+}

@@ -1,73 +1,161 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body {
-  margin: 8px; 
-  padding: 0px; 
-  background-color: #e1c3c3; 
-  width: auto;
-  font-family: sans-serif;
-  height: auto;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f0f0; /* Gris claro */
+  color: #4a4a4a; /* Gris antracita */
+  line-height: 1.6;
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Distribuye el espacio */
+  min-height: 100vh;
 }
 
-h1 {  
-  font-size: 3rem;
-  text-align: center; 
-}
-h2 {
-  font-size:  1.5rem;
+/* Estilos del Header */
+header {
+  background-color: #5BC0EB; /* Azul aguamarina */
+  color: white;
   text-align: center;
-  margin: 20px 0 20px 0;
-}
-p {
-  font-size: 0.875rem;
-  text-align: justify;
-  margin-bottom: 40px;
-}
-
-.contenedor {
   padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
-.galeria {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
 }
 
-
-
-.img img {
-  width: 100%;
-  height: 500px;
-  border-radius: 8px;
-  object-fit: cover;
+header p {
+  font-size: 1.2rem;
+  font-style: italic;
 }
 
+/* Sección Sobre Mí */
+#about {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
 
-
-.parrafo-img {
-  font-size: 0.875rem;
-  text-align: justify;
+#about h2 {
+  font-size: 2rem;
   margin-bottom: 20px;
 }
 
+#about p {
+  max-width: 800px;
+  margin: 0 auto;
+}
 
-@media (max-width: 599px) {
-  .img {
-      flex: 1 1 100%;
+/* Sección Proyectos */
+#projects {
+  padding: 40px 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.project {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.project p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+/* Botón */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #FDE74C; /* Naranja brillante */
+  color: #4a4a4a; /* Gris oscuro para contraste */
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #FC5130; /* Coral en hover */
+}
+
+/* Sección Contacto */
+#contact {
+  padding: 40px 20px;
+  background-color: white;
+  text-align: center;
+}
+
+#contact a {
+  color: #FC5130; /* Coral */
+  font-weight: bold;
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #5BC0EB; /* Azul aguamarina en hover */
+}
+
+/* Footer */
+footer {
+  background-color: #4a4a4a; /* Gris oscuro */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  grid-row: 3; /* Asegura que se posicione al final */
+}
+
+/* Media Queries para Responsividad */
+@media (max-width: 1024px) {
+  .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
   }
 }
 
-
-@media (min-width: 600px) and (max-width: 999px) {
-  .img {
-      flex: 1 1 45%;
+@media (max-width: 768px) {
+  .projects-grid {
+      grid-template-columns: 1fr;
   }
-}
 
+  header h1 {
+      font-size: 2rem;
+  }
 
-@media (min-width: 1000px) {
-  .img {
-      flex: 1 1 30%;
+  header p {
+      font-size: 1rem;
   }
 }
