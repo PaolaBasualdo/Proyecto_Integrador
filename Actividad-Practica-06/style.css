@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #63f89a; }
+
+.contenedor {
+  background-color: #ffffff; 
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+}
+input {
+  font-size: 14px;
+  line-height: 1.2; 
+  font-family: inherit; 
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 2px solid #63f89a;  
+  border-radius: 5px;
+  box-sizing: border-box;
+  outline: none; 
+  
+    
+}
+button {
+  background-color:#63f89a ; 
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+    background-color:#99efba; 
+}
+
+.lista {
+  background-color: white;
+  width: 100%;
+  color: black;
+  margin-top: 20px;
+}
+.iconos{
+  display: flex;
+  align-items: center;
+}
+      
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  background-color: rgb(197, 195, 195);
+  border-radius: 10px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+      
+li p {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+}
+i{
+  margin: 5px;
+  padding: 5px;
+  cursor: pointer;
+}
+.icono-eliminar
+.icono-competar{
+  color:black;
+}
+
+.icono-eliminar:hover,
+.icono-completar:hover
+{
+  background-color: grey;
+}
+.completa {
+  text-decoration: line-through; /*tachado*/
+  text-decoration-color: red; /* Color rojo para el subrayado */
+
+}
