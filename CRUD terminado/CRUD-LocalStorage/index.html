@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Version IV</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <div class="contenedor">
+      <h1>Tabla de Usuarios</h1>
+      <div class="form" id="form">
+        <input type="text" placeholder="Nombre" class="input" id="nombre">
+        <input type="edad" placeholder="Edad" class="input" id="edad">
+        <input type="text" placeholder="Email" class="input" id="email">
+        <button type="button" class = "boton" id="agregar">Agregar</button>
+      </div>
+      <div class="tabla">
+        <table>
+        <thead>
+          <tr><!--table row solo una linea el encabezado-->
+            <th class="thead">Nombre</th>
+            <th class="thead">Edad</th>
+            <th class="thead">Email</th>
+            <th class="thead">Accion</th>
+          </tr>
+        </thead> 
+        <tbody class="tbody" id="tbody"><!--se va a llenar dinamicamente--> 
+
+        </tbody>
+      </table>    
+
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+
+
+ 
