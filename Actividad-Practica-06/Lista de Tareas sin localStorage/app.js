@@ -8,7 +8,7 @@ const ul = document.querySelector("ul");//guardo la referencia de la lista
 
 botonAgregar.addEventListener("click", (e) => {//funcion flecha paso el evento como segundo argumento
 
-  const input = document.querySelector("input").value;//guardo la referncia del input y le asigo valor
+  const input = document.querySelector("input").value;//guardo la referncia del input y le asigno valor
   //const text = input.value;//si le asigno el valor fuera de la funcion, solo se captura una vez
 
   if(input !== ""){//esto funciona siempre que el input no este vacio
