@@ -1,0 +1,86 @@
+*{/*selector universal aplica a todos los elementos*/
+    margin: 0;
+    padding: 0;/*elimina margen y rellenos predeterminados*/
+    box-sizing: border-box;/*el ancho y alto de los elemnetos incluye bordes y relleno*/
+    font-family: sans-serif;
+}
+
+header{
+    display: flex;/*contenedor flexbox*/
+    align-items: center;/*centra los elementos verticalmente*/
+    justify-content: space-between;/*coloca los elementos en los extremos dejando espacio entre ellos*/
+    padding: 2rem ;
+    background-color: #ececee;
+}
+
+.logo{
+    max-width: 5rem;/*define elancho maximo, razonable como icono sin importar el tamano de la imagen original*/
+}
+
+.nav-list{
+    display: flex;
+    list-style-type: none;/*elimina los puntos de la vinetas predeterminados*/
+    gap: 1rem;
+}
+
+.nav-list li a{
+    text-decoration: none;/*elimina el subrayado del enlace*/
+    color: #1c1c1c;/*le cambia el color de azul a negro*/
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;/*oculta ambos botones en pantalla grande*/
+}
+
+
+
+@media screen and (max-width: 550px){/*estilos para pantallas menores a 550px*/
+
+    .abrir-menu, .cerrar-menu{
+        display: block;/*hace visible los iconos, los botones*/
+        border: 0;
+        font-size: 1.25rem;
+        background-color: transparent;
+        cursor: pointer;/*cambia el cursor a una manito*/
+    } 
+
+    .abrir-menu{
+        color: #1c1c1c;
+    }/*distinto color para contrastar con el fondo*/
+
+    .cerrar-menu{
+        color: #ececee;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;/*esconde la barra de navegacion*/
+
+        display: flex;
+        flex-direction: column;
+        align-items: end;/* alineado a la derecha*/
+        gap: 1rem;
+
+        position: absolute;/*colocan el menú en la esquina superior derecha y hacen que cubra toda la altura de la pantalla*/
+        top: 0;
+        right: 0;
+        bottom: 0;/*llega hasta abajo de la pagina*/
+        background-color: #1c1c1c;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);/* se opaca el reto de la pantalla*/
+
+    }
+    .nav.visible{
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-list{/*la lista de enlaces se organiza en columnas alineada a la derecha*/
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-list li a{/*cambia de color los enlaces para que contrasten con el fondo oscuro*/
+        color: #ececec;
+    }
+    
+}

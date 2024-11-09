@@ -1,0 +1,69 @@
+:root {
+    --imagenes: 6; /* Variable que indica la cantidad de imágenes en el carrusel */
+}
+
+* {
+   padding: 0; 
+   margin: 0;
+   box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #283048;
+    padding: 20px;
+}
+
+.container-carousel {
+    position: relative;
+    height: 300px;
+    width: 500px;
+    background-color: #e1e1e1;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.carouseles {
+    display: flex;
+    width: calc(100% * var(--imagenes));
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-section {
+    width: calc(100% / var(--imagenes));/* función calc() para calcular dinámicamente el ancho de cada elemento en función de una variable, el ancho de las vistas del slider es igual al ancho del contenedor principal dividido al numero de imagenes*/
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%; /*esta y la sig centran verticalmente los botones*/
+    transform: translateY(-50%);
+    font-size: 1.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #e1e1e1;
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
