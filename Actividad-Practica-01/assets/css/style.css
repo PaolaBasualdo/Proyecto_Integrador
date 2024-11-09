@@ -1,0 +1,126 @@
+/* Estilo general del cuerpo de la página */
+body {
+  font-family: 'Montserrat', sans-serif; /* Fuente principal */
+  line-height: 1.6; /* Altura de línea */
+  color: #333; /* Color de texto */
+  margin: 0; /* Eliminar márgenes */
+  padding: 0; /* Eliminar relleno */
+  background-color: #f8f9fa; /* Color de fondo */
+}
+
+/* Estilo del encabezado */
+header {
+  background-color: #ffcc80; /* Color de fondo del encabezado */
+  padding: 20px; /* Relleno interno */
+  text-align: center; /* Centrar contenido */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del encabezado */
+}
+
+/* Estilo del título en el encabezado */
+header h1 {
+  font-family: 'Chewy', cursive; /* Fuente del título */
+  margin: 0; /* Eliminar margen */
+  color: #555; /* Color del texto del título */
+}
+
+/* Estilo de la lista de navegación en el encabezado */
+header ul {
+  list-style: none; /* Eliminar viñetas de la lista */
+  padding: 0; /* Eliminar relleno */
+}
+
+/* Estilo de los elementos de la lista de navegación */
+header ul li {
+  display: inline; /* Mostrar elementos en línea */
+  margin-right: 15px; /* Margen derecho */
+}
+
+/* Estilo de los enlaces en la lista de navegación al pasar el cursor por encima */
+header ul li a:hover { 
+  color: #f2f2f2; /* Cambiar color al pasar el cursor */
+}
+
+/* Estilo de los enlaces en la lista de navegación */
+header ul li a {
+  text-decoration: none; /* Eliminar subrayado */
+  color: #333; /* Color del texto */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Estilo del enlace activo en la lista de navegación */
+header ul li a.active {
+  color: #555; /* Color del enlace activo */
+}
+
+/* Estilo del pie de página */
+.footer { 
+  background-color: #ffcc80; /* Color de fondo del pie de página */
+  text-align: center; /* Centrar texto */
+  padding: 10px; /* Relleno interno */
+  clear: both; /* Limpiar flotación */
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra del pie de página */
+}
+
+/* Estilos de home */
+/* Estilo del subtítulo principal */
+h2 {
+  font-family: 'Chewy', cursive; /* Fuente del subtítulo */
+  color: #555; /* Color del texto */
+  margin: 0; /* Eliminar margen */
+  padding: 0; /* Eliminar relleno */
+  text-align: center; /* Centrar texto */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 100%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar contenedor */
+  padding: 20px; /* Relleno interno */
+}
+
+/* Estilo de los títulos en el contenedor principal */
+.container h3 {
+  font-family: 'Chewy', cursive; /* Fuente de los títulos */
+  color: #555; /* Color del texto */
+}
+
+/* Estilo de los párrafos en el contenedor principal */
+.container p {
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo de las imágenes alineadas a la derecha */
+.image {
+  float: right; /* Flotar a la derecha */
+  margin: 0 0 20px 20px; /* Márgenes */
+  max-width: 25%; /* Ancho máximo */
+  height: auto; /* Altura automática */
+}
+
+/* Estilo de las imágenes alineadas a la izquierda */
+.image2 {
+  float: left; /* Flotar a la izquierda */
+  margin: 0 20px 20px 0; /* Márgenes */
+  max-width: 25%; /* Ancho máximo */
+  height: auto; /* Altura automática */
+}
+
+/* Estilo del artículo principal */
+.article {
+float: left; /* Flotar a la izquierda */
+width: 70%; /* Ancho del artículo */
+background-color: #FFF; /* Color de fondo */
+padding: 10px; /* Relleno interno */
+margin: 10px; /* Márgenes */
+border: 1px solid #CCC; /* Borde */
+}
+
+/* Estilo de las imágenes con limpieza flotante */
+.image3 {
+  float: right; /* Flotar a la derecha */
+  clear: both; /* Limpiar flotación */
+  margin: 0 0 20px 20px; /* Márgenes */
+  max-width: 25%; /* Ancho máximo */
+  height: auto; /* Altura automática */
+}
+

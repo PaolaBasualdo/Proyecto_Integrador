@@ -1,0 +1,88 @@
+/* Estilo para centrar elementos */
+.centrado {
+    display: flex; /* Mostrar como flexbox */
+    justify-content: center; /* Centrar horizontalmente */
+    text-align: center; /* Texto centrado */
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    width: 100%;
+    margin: 0 auto; /* Centrar el contenedor */
+}
+
+/* Estilo para elementos de la galería */
+.galeria {
+    margin: 5px; /* Margen de 5px alrededor */
+    border: 1px solid #ddd;
+    width: auto;
+}
+
+.galeria img {
+    width: 100%; /* Ancho del 100% del contenedor */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.galeria:hover img {
+    transform: scale(1.05); /* Agranda la imagen al pasar el cursor */
+}
+
+/* Estilo para descripciones */
+.descripcion {
+    padding: 15px; /* Relleno interno de 15px */
+    text-align: center; /* Texto centrado */
+    font-family: 'Chewy', cursive;
+    color: #555;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+/* Estilo para el contenedor de audio */
+.audio {
+    background-color: #f9f9f9; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno de 20px */
+    margin: 20px 0; /* Margen superior e inferior */
+}
+
+/* Contenedor flexible para audio */
+.audio-container {
+    display: flex; /* Mostrar como flexbox */
+    flex-direction: column; /* Dirección de los elementos en columna */
+    align-items: center; /* Centrar horizontalmente los elementos */
+    justify-content: center; /* Centrar verticalmente */
+    text-align: center; /* Texto centrado */
+    max-width: 600px; /* Ancho máximo de 600px */
+    margin: 0 auto; /* Margen automático a los lados para centrar */
+    border: 1px solid #ddd; /* Borde delgado sólido de color gris claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 20px; /* Espaciado interno de 20px */
+    background-color: #fff; /* Fondo blanco */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+/* Estilo para la imagen dentro del contenedor de audio */
+.audio-image {
+    max-width: 100%; /* Ancho máximo del 100% */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 10px; /* Bordes redondeados */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+/* Estilo para el reproductor de audio */
+.audio-player {
+    width: 100%; /* Ancho del 100% */
+    margin-bottom: 20px; /* Margen inferior de 20px */
+}
+
+/* Estilo para el texto del audio */
+.audio-text {
+    font-size: 16px; /* Tamaño de fuente de 16px */
+    color: #333; /* Color del texto gris oscuro */
+    text-align: justify; /* Justificar el texto */
+}
+
+
+
+

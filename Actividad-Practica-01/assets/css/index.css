@@ -1,0 +1,70 @@
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6; /* Altura de línea */
+    color: #333; /* Color del texto */
+    margin: 0; /* Eliminar márgenes */
+    padding: 0; /* Eliminar relleno */
+    background-color: #f8f9fa; /* Color de fondo */
+}
+/* Estilos de home */
+/* Estilo del subtítulo principal */
+h2 {
+    font-family: 'Chewy', cursive; /* Fuente del subtítulo */
+    color: #555; /* Color del texto */
+    margin: 0; /* Eliminar margen */
+    padding: 0; /* Eliminar relleno */
+  }
+  
+  /* Contenedor principal */
+  .container {
+    max-width: 100%; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centrar contenedor */
+    padding: 20px; /* Relleno interno */
+  }
+  
+  /* Estilo de los títulos en el contenedor principal */
+  .container h3 {
+    font-family: 'Chewy', cursive; /* Fuente de los títulos */
+    color: #555; /* Color del texto */
+  }
+  
+  /* Estilo de los párrafos en el contenedor principal */
+  .container p {
+    margin-bottom: 20px; /* Margen inferior */
+  }
+  
+  /* Estilo de las imágenes alineadas a la derecha */
+  .image {
+    float: right; /* Flotar a la derecha */
+    margin: 0 0 20px 20px; /* Márgenes */
+    max-width: 25%; /* Ancho máximo */
+    height: auto; /* Altura automática */
+  }
+  
+  /* Estilo de las imágenes alineadas a la izquierda */
+  .image2 {
+    float: left; /* Flotar a la izquierda */
+    margin: 0 20px 20px 0; /* Márgenes */
+    max-width: 25%; /* Ancho máximo */
+    height: auto; /* Altura automática */
+  }
+  
+  /* Estilo del artículo principal */
+  .article {
+  float: left; /* Flotar a la izquierda */
+  width: 70%; /* Ancho del artículo */
+  background-color: #FFF; /* Color de fondo */
+  padding: 10px; /* Relleno interno */
+  margin: 10px; /* Márgenes */
+  border: 1px solid #CCC; /* Borde */
+  }
+  
+  /* Estilo de las imágenes con limpieza flotante */
+  .image3 {
+    float: right; /* Flotar a la derecha */
+    clear: both; /* Limpiar flotación */
+    margin: 0 0 20px 20px; /* Márgenes */
+    max-width: 25%; /* Ancho máximo */
+    height: auto; /* Altura automática */
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Practica 02</title>
+  <meta name="description" content="Actividad Practica 02 - Proyecto Integrador I - 2024">
+  <meta name="author" content="Grupo 2 - Basualdo/Cuda/Heredia/Juarez">
+  <link rel="icon" href="./assets/media/icons/pets.svg" type="image/x-icon">
+  <link rel="stylesheet" href="../assets/css/contacto.css">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Chewy&display=swap"
+    rel="stylesheet">
+  <script src="../assets/js/script.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <h1>El mundo de los perros</h1>
+    <nav>
+      <ul>
+        <li><a  href="index.html">Home</a></li>
+        <li><a href="cuidado_canino.html">Cuidado canino</a></li>
+        <li><a href="audiovisual.html">Audiovisuales</a></li>
+        <li><a class="active"href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="contenedor-formulario">
+    <form action="">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" placeholder="Introduce aquí tu nombre" required minlength="3">
+
+      <label for="apellido">Apellido:</label>
+      <input type="text" id="apellido" placeholder="Introduce aquí tu apellido" required minlength="3">
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Introduce aquí tu email" required>
+
+      <label for="pais">Pais:</label>
+      <select name="pais" id="pais">
+        <option value="" selected>Seleccione una opción</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Chile">Chile</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Perú">Perú</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Brazil">Brazil</option>
+      </select>
+
+      <label for="comentario">Comentario</label>
+      <textarea name="comentario" id="comentario" placeholder="Introduce aquí tu comentario" required></textarea>
+
+
+      <label for="motivo">Motivo de contacto:</label>
+      <div class="contenedor-radio-motivo">
+        <label>
+          <input type="radio" id="motivo" name="motivo">
+          Necesito información
+        </label>
+        <label>
+          <input type="radio" id="motivo" name="motivo">
+          Quiero una remera
+        </label>
+        <label>
+          <input type="radio" id="motivo" name="motivo">
+          Reclamos
+        </label>
+      </div>
+
+      <input type="submit" value="Enviar">
+    </form>
+  </div>
+
+  <footer class="footer">
+    <p>Derechos reservados &copy; 2024</p>
+  </footer>
+
+</body>
+
+</html>

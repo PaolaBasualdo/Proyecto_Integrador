@@ -1,0 +1,50 @@
+  header {
+    background-color: #ffcc80; /* Color de fondo del encabezado */
+    padding: 20px; /* Relleno interno */
+    text-align: center; /* Centrar contenido */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra del encabezado */
+  }
+  
+  /* Estilo del título en el encabezado */
+  header h1 {
+    font-family: 'Chewy', cursive; /* Fuente del título */
+    margin: 0; /* Eliminar margen */
+    color: #555; /* Color del texto del título */
+  }
+  
+  /* Estilo de la lista de navegación en el encabezado */
+  header ul {
+    list-style: none; /* Eliminar viñetas de la lista */
+    padding: 0; /* Eliminar relleno */
+  }
+  
+  /* Estilo de los elementos de la lista de navegación */
+  header ul li {
+    display: inline; /* Mostrar elementos en línea */
+    margin-right: 15px; /* Margen derecho */
+  }
+  
+  /* Estilo de los enlaces en la lista de navegación al pasar el cursor por encima */
+  header ul li a:hover { 
+    color: #f2f2f2; /* Cambiar color al pasar el cursor */
+  }
+  
+  /* Estilo de los enlaces en la lista de navegación */
+  header ul li a {
+    text-decoration: none; /* Eliminar subrayado */
+    color: #333; /* Color del texto */
+    font-weight: bold; /* Texto en negrita */
+  }
+  
+  /* Estilo del enlace activo en la lista de navegación */
+  header ul li a.active {
+    color: #555; /* Color del enlace activo */
+  }
+  /* Estilo del subtítulo principal */
+h2 {
+  
+  color: #555; /* Color del texto */
+  margin: 0; /* Eliminar margen */
+  padding: 0; /* Eliminar relleno */
+  text-align: center; /* Centrar texto */
+}

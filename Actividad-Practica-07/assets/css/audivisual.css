@@ -1,0 +1,130 @@
+:root {
+    --imagenes: 6; /* Variable que indica la cantidad de imágenes en el carrusel */
+}
+
+
+.audiovisual {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin: 20px;
+}
+
+.video-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr)); /* Una columna completa en pantallas pequeñas */
+    max-width: 1200px;
+    margin-bottom: 100px;
+    padding: 10px;
+    gap: 10px;
+}
+
+
+
+.video-container iframe,
+.video-container video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.container-carousel {
+    position: relative;
+    height: 400px; 
+    width: 100%;
+    max-width: 700px; 
+    background-color: #e1e1e1;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-block-end: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.carouseles {
+    display: flex;
+    width: calc(100% * var(--imagenes));
+    height: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slider-section {
+    width: calc(100% / var(--imagenes));
+}
+
+.slider-section img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.btn-left,
+.btn-right {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);/*centra verticamente*/
+    font-size: 1.5rem;
+    background-color: black;
+    border-radius: 50%;
+    padding: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #e1e1e1;
+    
+    transition: 0.5s ease;
+    user-select: none;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+
+.audio-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px 20px 40px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.audio-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.audio-player {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.audio-text {
+    font-size: 16px;
+    color: #333;
+    text-align: justify;
+}
+/* Media query para pantallas grandes */
+@media (min-width: 768px) {
+    .video-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Colocar en columnas en pantallas más anchas */
+    }
+}

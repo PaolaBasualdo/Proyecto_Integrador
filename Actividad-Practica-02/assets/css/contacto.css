@@ -1,0 +1,48 @@
+div.contenedor-formulario {  
+    background-color: #d1ccc1;
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 20px;
+    width: 50%;
+    position: relative;
+    left: 25%;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #070707;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {  
+    width: 100%;
+    background-color: #55e65f;
+    padding: 15px 20px;   
+    margin: 8px 0;
+    font-size: large;
+    font-weight: bold;
+    border: 1px solid #0a8e05;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #2ef02e
+
+}
+textarea:focus,input:focus{
+    background-color: #ff847c;
+}
+
+.contenedor-radio-motivo {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}

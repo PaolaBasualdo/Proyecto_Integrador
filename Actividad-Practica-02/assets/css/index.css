@@ -1,0 +1,43 @@
+/* Estilo para el subtítulo principal */
+.subtitulo{
+  text-align: center; /* Centra el texto */
+  color: #444; /* Color del texto */
+  margin: 15px; /* Margen alrededor del subtítulo */
+  padding: 0; /* Sin relleno */
+}
+
+/* Estilo para los títulos internos */
+.tituloInterno{
+  font-size: 24px; /* Tamaño de fuente */
+  padding: 0 0 0 20px; /* Relleno a la izquierda */
+  margin: 0; /* Sin margen */
+  font-family: 'Chewy', cursive; /* Fuente personalizada */
+}
+
+/* Contenedor principal del contenido */
+.contenedor{
+  max-width: 100%; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centra el contenedor */
+  padding: 20px; /* Relleno dentro del contenedor */
+}
+
+/* Estilo para las imágenes flotantes a la derecha */
+.imagen{
+  float: right; /* Flota la imagen a la derecha */
+  margin: 0 0 20px 20px; /* Margen inferior e izquierdo */
+  max-width: 25%; /* Ancho máximo del 25% del contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilo para las imágenes flotantes a la izquierda */
+.imagen2{
+  float: left; /* Flota la imagen a la izquierda */
+  margin: 0 20px 20px 0px; /* Margen derecho e inferior */
+  max-width: 25%; /* Ancho máximo del 25% del contenedor */
+  height: auto; /* Ajusta la altura automáticamente */
+}
+
+/* Estilo para los párrafos */
+p{
+  font-size: 18px; /* Tamaño de fuente */
+}

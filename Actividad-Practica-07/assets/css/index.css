@@ -1,0 +1,24 @@
+/* Contenedor grid para contenido principal */
+.contenedor-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+/* Estilo para los elementos hijos en el grid */
+.contenedor-grid .grid-item {
+    padding: 1rem;
+    background-color: #f9f9f9; 
+    border-radius: 8px; 
+    text-align: center; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+  }
+  
+/* Opcional: Estilo para las imágenes dentro del grid */
+.contenedor-grid .imagen  {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+

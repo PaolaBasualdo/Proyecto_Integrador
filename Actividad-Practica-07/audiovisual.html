@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Actividad Practica 07</title>
+  <meta name="description" content="Actividad Practica 07 - Proyecto Integrador I - 2024">
+  <meta name="author" content="Paola Basualdo">
+  <link rel="icon" href="./assets/media/icons/pets.svg" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/audivisual.css">
+  <link rel="stylesheet" href="styles.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  
+</head>
+
+<body>
+  <header>
+    <h1 >El mundo de los perros</h1>
+    <div class="nav-container">
+      <a class ="home" href="index.html"> <img class="logo" src="./assets/media/icons/istockphoto-1005374612-170667a.jpg" alt="logo"></a> 
+      <button id="abrir" class="abrir-menu"> <i class="bi bi-list"></i></button>
+
+      <nav id="nav" class="nav">
+      <button id="cerrar" class="cerrar-menu"><i class="bi bi-x-square"></i></button>
+        <ul class="nav-list">
+        <li>  </li>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="cuidado_canino.html">Cuidado Canino</a></li>
+        <li><a class="active" href="audiovisual.html">Audiovisual</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <h2> Descubrí la diversidad canina </h2>
+  <section class="audiovisual">
+    
+    <div class="video-container">
+      
+      <video src="/assets/media/videos/diversidad.mp4" autoplay muted controls height="270px"></video>
+      <video src="/assets/media/videos/masPerros.mp4" autoplay muted controls height="270px"></video>
+    </div>
+
+    <h2>Razas para compartir en familia</h2>
+    <div class="container-carousel">
+      
+      <div class="carouseles" id="slider">
+        <section class="slider-section"><img src="./assets/media/img/slider/beagle.jpg" alt="1"></section>
+        <section class="slider-section"><img src="./assets/media/img/slider/bichon.jpg" alt="2"></section>
+        <section class="slider-section"><img src="./assets/media/img/slider/frenchie.jpg" alt="3"></section>
+        <section class="slider-section"><img src="./assets/media/img/slider/golden.jpg" alt="4"></section>
+        <section class="slider-section"><img src="./assets/media/img/slider/salchicha.jpg" alt="5"></section>
+        <section class="slider-section"><img src="./assets/media/img/slider/westy.jpg" alt="6"></section>
+      </div>
+      <div class="btn-left"><i class="bi bi-chevron-compact-left"></i></div>
+      <div class="btn-right"><i class="bi bi-chevron-compact-right"></i></div>
+    
+    </div>
+    
+    <h2> ¿Los perros hablan y se comunican con los humanos? </h2>
+    <div class="audio-container">
+      
+      <img src="assets/media/img/los_perros_hablan.jpg" alt="Golden" class="audio-image">
+      <audio controls class="audio-player">
+        <source src="assets/media/audio/Los perros hablan y se comunican con los humanos_.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+        <p class="audio-text">Cuando mueven la cola o las orejas se están expresando a través del cuerpo. Pero también emiten voces y esa comunicación tiene que ver con el famoso ladrido.
+          El Dr Juan Enrique Romero nos explica como se comunican nuestros perros.</p>
+    </div>
+
+ </section>
+
+ <footer class="footer">
+  <p>Derechos reservados &copy; Proyecto Integrador - Actividad Practica 07 - 2024</p>
+</footer>
+
+<script src="./js/index.js"></script>
+
+</body>
+
+</html>

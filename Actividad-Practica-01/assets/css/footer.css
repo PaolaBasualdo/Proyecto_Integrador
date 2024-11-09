@@ -1,0 +1,7 @@
+.footer { 
+    background-color: #ffcc80; /* Color de fondo del pie de página */
+    text-align: center; /* Centrar texto */
+    padding: 10px; /* Relleno interno */
+    clear: both; /* Limpiar flotación */
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Sombra del pie de página */
+  }  

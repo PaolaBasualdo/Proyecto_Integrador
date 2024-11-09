@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    justify-content: center;
+    padding: 0 70px 20px 70px;
+}
+table {
+    border-collapse: collapse;
+    border: 3px solid #99b898;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-size: 1 rem;
+    background-color: #FFF;
+ }
+th {
+    text-align: left;
+    border: 2px solid #99b898;
+    padding: 10px;
+    background-color: #fecfa8;
+}
+td {
+    border: 2px solid #99b898;
+    padding: 10px;
+}
+tr:hover{
+    background-color: #cbe6ca;
+}
